@@ -16,7 +16,7 @@ greet(person);
 getPersonInfo(person);
 
 /**
- * JSON (JavasScript Object Notation) is a data interchange format, representing attributes and values in
+ * JSON (JavaScript Object Notation) is a data interchange format, representing attributes and values in
  *  a human-readable format. It is capable of represeting all variable types used in Javascript as attribute-value pairs.
  * JSON data is principally used in passing data between back-end services and web front-ends over API,
  *  either to allow the page to send requests, or receiving response data from the server side. JSON can
