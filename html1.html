@@ -1,0 +1,36 @@
+<html>
+    <script>
+        function doSomething(){
+            let C = parseInt(num1.value) + parseInt(num2.value)
+            num3.value=C
+            if(C >= 100){
+                msg.value = "A"
+            }else {
+                msg.value="B"
+            }
+
+        }
+        function message1() {
+            msg.value = "Enter first number for addition"
+        }
+        function message1Out() {
+            msg.value = ""
+        }
+        function message2() {
+            msg.value = "Enter second number for addition"
+        }
+    </script>
+
+    <center>Input Form</center>
+    <br>
+    <br>
+    Number1: <input type = "text" id="num1" onmouseenter="message1()" onmouseleave="message1Out()">
+    <br>
+    Number2: <input type = "text" id="num2" onmouseenter="message2()" onmouseleave="message1Out()">
+    <br>
+    Number3: <input type = "text" id="num3">
+    <br>
+    Message: <input type = "text" id="msg">
+    <input type="button" value="Click it" onclick="doSomething()" id="btn">
+
+</html>
