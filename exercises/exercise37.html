@@ -1,0 +1,27 @@
+<html>
+    <script>
+        const validEmail = (email) => {
+            return String(email)
+                .toLowerCase()
+                .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+        };
+
+        function validateEmail(){
+            if(validEmail(email.value)) {
+                email.style.color = "green"
+            } else {
+                email.style.color="red"
+            }
+        }
+        function showValidEmail(){
+            if(validEmail(email.value)) {
+                alert("Valid")
+            } else {
+                alert("Invalid")
+            }
+        }
+    </script>
+    email: <input type="text" id="email" onkeyup="validateEmail()"><input type="button" value="Submit" onclick="showValidEmail()">
+</html>

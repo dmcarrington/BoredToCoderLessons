@@ -1,0 +1,28 @@
+<html>
+  <script>
+    function handleClick(){
+      para.innerHTML="Button was clicked"
+    }
+    document.addEventListener("DOMContentLoaded", (event) => {
+      console.log("DOMContentLoaded")
+      const header = document.querySelector("h1")
+      console.log(header.innerHTML)
+});
+  </script>
+  <body>
+    <h1 id="header">Header Text</h1>
+    <p id="para">Here is some paragraph text</p>
+    <input type="text" id="textfield">
+    <input type="button" id="btn" value="Click Me" onclick="handleClick()">
+    <div id="main_body">
+      Here is some body text
+      <ul class="list">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
